@@ -22,7 +22,7 @@ sdk-perf-stats = ["sol-parser-sdk/perf-stats"]
 sdk-ultra-perf = ["sol-parser-sdk/ultra-perf"]
 
 [dependencies]
-sol-parser-sdk = { path = "../sol-parser-sdk", version = "0.7.5", default-features = false }
+sol-parser-sdk = { git = "https://github.com/realhen/sol-parser-sdk", rev = "5e685c5f86570ec26e668c77417b7b3d5967d1df", version = "=0.7.6", default-features = false }
 solana-sdk = "=4.0.1"
 solana-client = "=4.2.2"
 solana-transaction-status = { version = "=4.2.2", features = ["agave-unstable-api"] }
@@ -46,5 +46,6 @@ crossbeam-queue = "0.3.12"
 tonic-prost = "0.14.5"
 
 [dev-dependencies]
+base64 = "=0.22.1"
 serde_json = "1.0.149"
 solana-commitment-config = { version = "3.1.1", features = ["serde"] }
